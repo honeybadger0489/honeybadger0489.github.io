@@ -1,2 +1,5 @@
-# honeybadger0489.github.io
-Public SpecEd Goal A study UI (Home, Agentic Engineering textbook, glossary quiz). Preview site only.
+# SpecEd Goal A study UI
+
+Public static export of Home → Agentic Engineering textbook → glossary quiz.
+
+Source app lives in the private Talos repo (`apps/speced/`). This site is the openable preview.
