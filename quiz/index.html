@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz — Glossary drill</title>
+  <link rel="stylesheet" href="/public/app.css" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">SpecEd</a>
+    <nav><a href="/">Home</a><a href="/textbook">Textbook</a><a href="/quiz" aria-current="page">Quiz</a></nav>
+  </header>
+  <main>
+    <section class="card">
+      <h1>Glossary quiz</h1>
+      <p class="warn" data-honesty="local-reveal-score">Honesty: simple local reveal/score from keys in 01-glossary-drill.md. Section D is map-notes only — no winner key. This screen does not clear human_signoff.</p>
+    </section>
+    <article class="card" data-quiz-source="01-glossary-drill.md">
+    <div class="quiz-tools">
+      <button type="button" id="quiz-score">Score keyed items</button>
+      <button type="button" id="quiz-reveal">Reveal / hide keys</button>
+    </div>
+    <p id="quiz-result" data-honesty="local-reveal-score">Local reveal/score from keys in 01-glossary-drill.md. Section D is not auto-graded.</p>
+    <aside id="quiz-keys" class="card muted" hidden>
+      <h2>Answer keys (from the quiz markdown)</h2>
+      <pre>See Score / Reveal on this page. Keys come from 01-glossary-drill.md.</pre>
+    </aside>
+    <script>window.SPECED_QUIZ_KEYS = {"L":{"L1":"Austin Marchese","L2":"Austin Marchese","L3":"BridgeMind","L4":"IndyDevDan","L5":"Anthropic","L6":"Austin Marchese (Graph Engineering)","L7":"Cole Medin","L8":"Austin Marchese","L9":"IndyDevDan (Stripe recap)","L10":"IndyDevDan (same person as L9, **different cut**)","L11":"Austin Marchese (ChatGPT Agent harvest)","L12":"Cole Medin (Archon description word)","L13":"Cole Medin (**title only** — do not unpack Plan / Implement / Verify)","L14":"Austin Marchese (n8n harvest)"},"B":{"B1":"supported","B2":"contested vs Austin as *the* unit","B3":"title only","B4":"supported as a shape; not L1 and not L5","B5":"unverifiable","B6":"disclaimer"},"H":{"H1":"1","H2":"2","H3":"3","H4":"4","H5":"5"},"extra":"map the fight (C4). No winner without Tom","hasKeys":true};</script>
+    <script src="/public/quiz.js"></script>
+  <h1>Glossary drill</h1>
+<p><strong>Kind:</strong> quiz (attribution + status label). Not an exam key for a single correct loop or harness.</p>
+<p><strong>Read first:</strong> <a href="/textbook/glossary">glossary</a> rows for loop (1–14) and the five harness objects.</p>
+<p><strong>Signoff debt:</strong> loop-engineering (74), harness-engineering (72), graph-engineering (58) remain flagged. This quiz does not clear them.</p>
+<h2>A. Fourteen loop words — who uses <em>loop</em> this way?</h2>
+<table><thead><tr><th>#</th><th>Use (this book)</th><th>Person / product (write one)</th></tr></thead><tbody><tr><td>L1</td><td>Trigger; Execution Skills; Goal and Verification; Output and Memory</td><td><input type="text" data-quiz-id="L1" aria-label="L1" /></td></tr><tr><td>L2</td><td>Companion catalog under INGEST / BUILD / COMPOUND (eight names)</td><td><input type="text" data-quiz-id="L2" aria-label="L2" /></td></tr><tr><td>L3</td><td>Repeated work wired to a goal and a production stop (Sentry / CloudWatch / PostHog)</td><td><input type="text" data-quiz-id="L3" aria-label="L3" /></td></tr><tr><td>L4</td><td>One node inside a software factory; not the name of the whole practice</td><td><input type="text" data-quiz-id="L4" aria-label="L4" /></td></tr><tr><td>L5</td><td>Scheduled-tasks / <code>/loop</code> product surface</td><td><input type="text" data-quiz-id="L5" aria-label="L5" /></td></tr><tr><td>L6</td><td>Graph Engineering <strong>shape</strong>: validate the output</td><td><input type="text" data-quiz-id="L6" aria-label="L6" /></td></tr><tr><td>L7</td><td>Ralph / multi-session loop on the harness Platinum</td><td><input type="text" data-quiz-id="L7" aria-label="L7" /></td></tr><tr><td>L8</td><td>Capture the miss; write it into the brief / CLAUDE.md / store</td><td><input type="text" data-quiz-id="L8" aria-label="L8" /></td></tr><tr><td>L9</td><td>Stripe recap: in-loop vs out-loop</td><td><input type="text" data-quiz-id="L9" aria-label="L9" /></td></tr><tr><td>L10</td><td>Three-tier: out-loop / in-sandbox / Pi</td><td><input type="text" data-quiz-id="L10" aria-label="L10" /></td></tr><tr><td>L11</td><td>ChatGPT Agent schedule (different product than L5)</td><td><input type="text" data-quiz-id="L11" aria-label="L11" /></td></tr><tr><td>L12</td><td>Archon YAML harness description word</td><td><input type="text" data-quiz-id="L12" aria-label="L12" /></td></tr><tr><td>L13</td><td>Chapter title The PIV Loop Framework only</td><td><input type="text" data-quiz-id="L13" aria-label="L13" /></td></tr><tr><td>L14</td><td>n8n HITL / evaluator graph</td><td><input type="text" data-quiz-id="L14" aria-label="L14" /></td></tr></tbody></table>
+<h2>B. Status labels</h2>
+<fieldset class="card"><legend>B1</legend><label><input type="radio" name="B1" data-quiz-id="B1" value="supported" /> supported</label><br /><label><input type="radio" name="B1" data-quiz-id="B1" value="contested as *the* unit vs Indy" /> contested as <em>the</em> unit vs Indy</label><br /><label><input type="radio" name="B1" data-quiz-id="B1" value="title-only" /> title-only</label><br /><label><input type="radio" name="B1" data-quiz-id="B1" value="unverifiable" /> unverifiable</label></fieldset>
+<fieldset class="card"><legend>B2</legend><label><input type="radio" name="B2" data-quiz-id="B2" value="supported as *the* unit" /> supported as <em>the</em> unit</label><br /><label><input type="radio" name="B2" data-quiz-id="B2" value="contested vs Austin as *the* unit" /> contested vs Austin as <em>the</em> unit</label><br /><label><input type="radio" name="B2" data-quiz-id="B2" value="title-only" /> title-only</label><br /><label><input type="radio" name="B2" data-quiz-id="B2" value="unverifiable" /> unverifiable</label></fieldset>
+<fieldset class="card"><legend>B3</legend><label><input type="radio" name="B3" data-quiz-id="B3" value="supported as a spoken four-step method" /> supported as a spoken four-step method</label><br /><label><input type="radio" name="B3" data-quiz-id="B3" value="supported as title only; body unseen" /> supported as <strong>title only</strong>; body unseen</label><br /><label><input type="radio" name="B3" data-quiz-id="B3" value="official Anthropic `/loop` synonym" /> official Anthropic <code>/loop</code> synonym</label><br /><label><input type="radio" name="B3" data-quiz-id="B3" value="unverifiable Stanford/Ng authorship" /> unverifiable Stanford/Ng authorship</label></fieldset>
+<fieldset class="card"><legend>B4</legend><label><input type="radio" name="B4" data-quiz-id="B4" value="same object; pick one name" /> same object; pick one name</label><br /><label><input type="radio" name="B4" data-quiz-id="B4" value="supported as a shape; not L1 and not L5 (C12)" /> <strong>supported as a shape</strong>; <strong>not</strong> L1 and <strong>not</strong> L5 (C12)</label><br /><label><input type="radio" name="B4" data-quiz-id="B4" value="official vendor spec for Austin’s four-block" /> official vendor spec for Austin’s four-block</label><br /><label><input type="radio" name="B4" data-quiz-id="B4" value="title-only" /> title-only</label></fieldset>
+<fieldset class="card"><legend>B5</legend><label><input type="radio" name="B5" data-quiz-id="B5" value="supported" /> supported</label><br /><label><input type="radio" name="B5" data-quiz-id="B5" value="contested sameness only" /> contested sameness only</label><br /><label><input type="radio" name="B5" data-quiz-id="B5" value="unverifiable (do not invent the wording)" /> <strong>unverifiable</strong> (do not invent the wording)</label><br /><label><input type="radio" name="B5" data-quiz-id="B5" value="title-only" /> title-only</label></fieldset>
+<fieldset class="card"><legend>B6</legend><label><input type="radio" name="B6" data-quiz-id="B6" value="SpecEd-validated measurement" /> SpecEd-validated measurement</label><br /><label><input type="radio" name="B6" data-quiz-id="B6" value="disclaimer slogan" /> <strong>disclaimer</strong> slogan</label><br /><label><input type="radio" name="B6" data-quiz-id="B6" value="official Anthropic ratio" /> official Anthropic ratio</label><br /><label><input type="radio" name="B6" data-quiz-id="B6" value="Cole ~98% pasted onto loops" /> Cole ~98% pasted onto loops</label></fieldset>
+<h2>C. Five harness objects</h2>
+<table><thead><tr><th>#</th><th>Sentence</th><th>Object # (1–5)</th></tr></thead><tbody><tr><td>H1</td><td>Coding agent = model + harness. May Platinum definition.</td><td><input type="text" data-quiz-id="H1" aria-label="H1" /></td></tr><tr><td>H2</td><td>Named open-source Harness shipped beside V4 Pro.</td><td><input type="text" data-quiz-id="H2" aria-label="H2" /></td></tr><tr><td>H3</td><td>Stripe Minions harness piece forked from Block Goose.</td><td><input type="text" data-quiz-id="H3" aria-label="H3" /></td></tr><tr><td>H4</td><td>Local Docker terminal backend + mounts.</td><td><input type="text" data-quiz-id="H4" aria-label="H4" /></td></tr><tr><td>H5</td><td>Open event loop you can pin / fork / override.</td><td><input type="text" data-quiz-id="H5" aria-label="H5" /></td></tr></tbody></table>
+<p>Object bank: 1 Cole wrapper · 2 DeepSeek vendor · 3 Goose fork · 4 Docker piece · 5 Pi event loop</p>
+<fieldset class="card"><legend>C-extra</legend><label><input type="radio" name="C-extra" data-quiz-id="C-extra" value="map the fight (C4); keep both cuts" /> map the fight (C4); keep both cuts</label><br /><label><input type="radio" name="C-extra" data-quiz-id="C-extra" value="May wins; discard January" /> May wins; discard January</label><br /><label><input type="radio" name="C-extra" data-quiz-id="C-extra" value="January wins; discard May" /> January wins; discard May</label><br /><label><input type="radio" name="C-extra" data-quiz-id="C-extra" value="both equal Cole’s ~98% measurement" /> both equal Cole’s ~98% measurement</label></fieldset>
+<h2>D. Map-the-fight (no winner key)</h2>
+<p>Write positions, not a winner. Tom has not signed C1, C2, C3, or C12.</p>
+    </article>
+  </main>
+  <footer>SpecEd Goal A · study UI · no Goal B · no signoff actions</footer>
+</body>
+</html>
